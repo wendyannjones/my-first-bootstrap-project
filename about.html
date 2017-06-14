@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <meta name="viewport" content="width=device-midth, initial-scale=1.0" charset="UTF-8">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <link href="css/mystyle.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    
+    <!--navbar-->
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Wendy A.Jones | About</a>
+            
+            <!--burger menu-->
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>            
+            </button>
+            
+            <!--main menu-->
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                <!--dropdown menu-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="webdesign.html">Web Design</a></li>
+                            <li><a href="software.html">Software</a></li>
+                            <li><a href="appdev.html">App Development</a></li>
+                            <li><a href="graphics.html">Graphic Design</a></li>
+                        </ul>
+                    </li>
+                <!--dropdown menu END-->
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#contact" data-toggle="modal">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--navbar END-->
+    
+    
+    <!--ADD NEW CONTENT HERE-->
+    
+    
+    <!--ABOUT 9 COL-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="page-header">
+                            <h3>About Me <small>Wendy Jones</small></h3>
+                        </div>
+                        <img class="featureImg" src="images/puppies.jpeg" width="100%"/>
+                        <p>Americano chicory froth grounds black plunger pot espresso, siphon medium ut cortado robust. Breve dark, grinder coffee iced, café au lait skinny coffee single origin et irish. Instant macchiato mocha caramelization galão latte extra, robust cup steamed frappuccino sugar. Whipped con panna kopi-luwak grinder beans half and half grinder affogato.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">Web Design</h4>
+                        <p>Id coffee grinder french press fair trade ut foam. Cinnamon iced, as filter, brewed aroma et redeye seasonal skinny. At whipped cup, doppio frappuccino espresso plunger pot medium siphon body.</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">Software</h4>
+                        <p>Id coffee grinder french press fair trade ut foam. Cinnamon iced, as filter, brewed aroma et redeye seasonal skinny. At whipped cup, doppio frappuccino espresso plunger pot medium siphon body.</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">App Development</h4>
+                        <p>Id coffee grinder french press fair trade ut foam. Cinnamon iced, as filter, brewed aroma et redeye seasonal skinny. At whipped cup, doppio frappuccino espresso plunger pot medium siphon body.</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">Graphic Design</h4>
+                        <p>Id coffee grinder french press fair trade ut foam. Cinnamon iced, as filter, brewed aroma et redeye seasonal skinny. At whipped cup, doppio frappuccino espresso plunger pot medium siphon body.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--ABOUT 9 COL END-->
+    
+    
+    <!--FOOTER-->
+    <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text">Site by  Wendy A. Jones &copy; 2017</p>
+            <a href="#contact" data-toggle="modal" class="navbar-btn btn-danger btn pull-right">Contact Me</a>
+        </div>
+    </div>
+    
+    <!--FOOTER END-->
+    
+    <!--MODAL-->
+    <div class="modal fade" id="contact" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="form-horizontal">
+                <!--MODAL HEADER-->
+                <div class="modal-header">
+                    <h4>Get in touch...</h4>
+                </div>
+                <!--MODAL BODY-->
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="contact-name" class="col-lg-2 control-label">Name:</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email" class="col-lg-2 control-label">Email:</label>
+                        <div class="col-lg-10">
+                            <input type="email" class="form-control" id="contact-email" placeholder="you@email.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-msg" class="col-lg-2 control-label">Message:</label>
+                        <div class="col-lg-10">
+                            <textarea class="form-control" rows="8"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <!--MODAL FOOTER-->
+                <div class="modal-footer">
+                    <a class="btn btn-success">Submit</a>
+                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <!--MODAL END-->
+    
+    <!--Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src=js/bootstrap.min.js></script>
+    
+</body>
+</html>

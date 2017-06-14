@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Bootstrap Project</title>
+    <meta name="viewport" content="width=device-midth, initial-scale=1.0" charset="UTF-8">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <link href="css/mystyle.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    
+    <!--navbar-->
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Wendy A. Jones</a>
+            
+            <!--burger menu-->
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>            
+            </button>
+            
+            <!--main menu-->
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                <!--dropdown menu-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="webdesign.html">Web Design</a></li>
+                            <li><a href="software.html">Software</a></li>
+                            <li><a href="appdev.html">App Development</a></li>
+                            <li><a href="graphics.html">Graphic Design</a></li>
+                        </ul>
+                    </li>
+                <!--dropdown menu END-->
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#contact" data-toggle="modal">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--navbar END-->
+    
+    <!--JUMBOTRON-->
+    <div class="container">
+        <div class="jumbotron">
+            <h1 id="headerColor">Hello World</h1>
+                <p> Spicy jalapeno bacon ipsum dolor amet strip steak cupim meatloaf filet mignon, spare ribs pork burgdoggen turkey turducken swine. Ground round swine turducken shank t-bone burgdoggen salami. Capicola ground round leberkas t-bone, meatloaf ham tenderloin jerky sirloin.</p>
+                <a href="http://www.twitter.com/Wendy_Jones" target="_blank" class="btn-info btn">Follow Me On Twitter</a>
+        </div>
+    </div>
+    <!--JUMBOTRON END-->
+    
+    <!--GRID SYSTEM-->
+    <div class="container">
+        <div class="row">
+    <!--ARTICLE 1-->
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="images/Bitcoin%202.jpeg" alt="Bitcoin alternatives">
+                        <div class="caption">
+                            <h3>Bitcoin alternatives</h3>
+                                <p>Spicy jalapeno bacon ipsum dolor amet strip steak cupim meatloaf filet mignon, spare ribs pork burgdoggen turkey turducken swine.</p>
+                                <p> <a href="http://www.bbc.co.uk/news/business-40021902" target="_blank" class="btn btn-default" role="button">Read More</a></p>
+                        </div>
+                </div>
+            </div>
+    <!--ARTICLE 2-->
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="images/whale%202.jpeg" alt="Huge whale">
+                        <div class="caption">
+                            <h3>Huge whale</h3>
+                                <p>Spicy jalapeno bacon ipsum dolor amet strip steak cupim meatloaf filet mignon, spare ribs pork burgdoggen turkey turducken swine.</p>
+                                <p> <a href="http://www.bbc.co.uk/news/science-environment-40032372" target="_blank" class="btn btn-default" role="button">Read More</a></p>
+                        </div>
+                </div>
+            </div>  
+    <!--ARTICLE 3-->
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="images/flamingo%202.jpeg" alt="Balancing Flamingoes">
+                        <div class="caption">
+                            <h3>Balancing Flamingoes</h3>
+                                <p>Spicy jalapeno bacon ipsum dolor amet strip steak cupim meatloaf filet mignon, spare ribs pork burgdoggen turkey turducken swine.</p>
+                                <p> <a href="http://www.bbc.co.uk/news/science-environment-40016816" target="_blank" class="btn btn-default" role="button">Read More</a></p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--GRID SYSTEM END-->
+    
+    <!--FOOTER-->
+    <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text">Site by  Wendy A. Jones &copy; 2017</p>
+            <a href="#contact" data-toggle="modal" class="navbar-btn btn-danger btn pull-right">Contact Me</a>
+        </div>
+    </div>
+    
+    <!--FOOTER END-->
+    
+    <!--MODAL-->
+    <div class="modal fade" id="contact" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="form-horizontal">
+                <!--MODAL HEADER-->
+                <div class="modal-header">
+                    <h4>Get in touch...</h4>
+                </div>
+                <!--MODAL BODY-->
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="contact-name" class="col-lg-2 control-label">Name:</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email" class="col-lg-2 control-label">Email:</label>
+                        <div class="col-lg-10">
+                            <input type="email" class="form-control" id="contact-email" placeholder="you@email.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-msg" class="col-lg-2 control-label">Message:</label>
+                        <div class="col-lg-10">
+                            <textarea class="form-control" rows="8"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <!--MODAL FOOTER-->
+                <div class="modal-footer">
+                    <a class="btn btn-success">Submit</a>
+                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <!--MODAL END-->
+    
+    <!--Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src=js/bootstrap.min.js></script>
+    
+</body>
+</html>
